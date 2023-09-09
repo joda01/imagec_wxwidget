@@ -29,7 +29,7 @@
     <property name="use_array_enum">0</property>
     <property name="use_enum">0</property>
     <property name="use_microsoft_bom">0</property>
-    <object class="Frame" expanded="true">
+    <object class="Frame" expanded="false">
       <property name="aui_managed">0</property>
       <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
       <property name="bg"></property>
@@ -46,12 +46,12 @@
       <property name="id">wxID_ANY</property>
       <property name="maximum_size"></property>
       <property name="minimum_size"></property>
-      <property name="name">MyFrame3</property>
+      <property name="name">frameMain</property>
       <property name="pos"></property>
       <property name="size">1920,1080</property>
       <property name="style">wxDEFAULT_FRAME_STYLE</property>
       <property name="subclass">; ; forward_declare</property>
-      <property name="title"></property>
+      <property name="title">imageC</property>
       <property name="tooltip"></property>
       <property name="two_step_creation">0</property>
       <property name="window_extra_style"></property>
@@ -116,34 +116,23 @@
         <property name="window_name"></property>
         <property name="window_style"></property>
         <object class="tool" expanded="false">
-          <property name="bitmap"></property>
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-save-20.png</property>
           <property name="context_menu">0</property>
           <property name="id">wxID_ANY</property>
           <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
+          <property name="label">Save</property>
           <property name="name">m_tool1</property>
           <property name="permission">protected</property>
           <property name="statusbar"></property>
           <property name="tooltip"></property>
         </object>
         <object class="tool" expanded="false">
-          <property name="bitmap"></property>
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-opened-folder-20.png</property>
           <property name="context_menu">0</property>
           <property name="id">wxID_ANY</property>
           <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
+          <property name="label">Open</property>
           <property name="name">m_tool2</property>
-          <property name="permission">protected</property>
-          <property name="statusbar"></property>
-          <property name="tooltip"></property>
-        </object>
-        <object class="tool" expanded="false">
-          <property name="bitmap"></property>
-          <property name="context_menu">0</property>
-          <property name="id">wxID_ANY</property>
-          <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
-          <property name="name">m_tool3</property>
           <property name="permission">protected</property>
           <property name="statusbar"></property>
           <property name="tooltip"></property>
@@ -152,42 +141,28 @@
           <property name="permission">protected</property>
         </object>
         <object class="tool" expanded="false">
-          <property name="bitmap"></property>
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-start-20.png</property>
           <property name="context_menu">0</property>
           <property name="id">wxID_ANY</property>
           <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
+          <property name="label">Start</property>
+          <property name="name">m_tool3</property>
+          <property name="permission">protected</property>
+          <property name="statusbar"></property>
+          <property name="tooltip"></property>
+        </object>
+        <object class="tool" expanded="false">
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-stop-20.png</property>
+          <property name="context_menu">0</property>
+          <property name="id">wxID_ANY</property>
+          <property name="kind">wxITEM_NORMAL</property>
+          <property name="label">Stop</property>
           <property name="name">m_tool4</property>
           <property name="permission">protected</property>
           <property name="statusbar"></property>
           <property name="tooltip"></property>
         </object>
-        <object class="tool" expanded="false">
-          <property name="bitmap"></property>
-          <property name="context_menu">0</property>
-          <property name="id">wxID_ANY</property>
-          <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
-          <property name="name">m_tool5</property>
-          <property name="permission">protected</property>
-          <property name="statusbar"></property>
-          <property name="tooltip"></property>
-        </object>
-        <object class="tool" expanded="false">
-          <property name="bitmap"></property>
-          <property name="context_menu">0</property>
-          <property name="id">wxID_ANY</property>
-          <property name="kind">wxITEM_NORMAL</property>
-          <property name="label">tool</property>
-          <property name="name">m_tool6</property>
-          <property name="permission">protected</property>
-          <property name="statusbar"></property>
-          <property name="tooltip"></property>
-        </object>
-        <object class="toolSeparator" expanded="true">
-          <property name="permission">protected</property>
-        </object>
-        <object class="wxGauge" expanded="true">
+        <object class="wxGauge" expanded="false">
           <property name="BottomDockable">1</property>
           <property name="LeftDockable">1</property>
           <property name="RightDockable">1</property>
@@ -242,10 +217,41 @@
           <property name="validator_style">wxFILTER_NONE</property>
           <property name="validator_type">wxDefaultValidator</property>
           <property name="validator_variable"></property>
-          <property name="value">0</property>
+          <property name="value">50</property>
           <property name="window_extra_style"></property>
           <property name="window_name"></property>
           <property name="window_style"></property>
+        </object>
+        <object class="toolSeparator" expanded="false">
+          <property name="permission">protected</property>
+        </object>
+        <object class="tool" expanded="false">
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-settings-20.png</property>
+          <property name="context_menu">0</property>
+          <property name="id">wxID_ANY</property>
+          <property name="kind">wxITEM_NORMAL</property>
+          <property name="label">Settings</property>
+          <property name="name">m_tool5</property>
+          <property name="permission">protected</property>
+          <property name="statusbar"></property>
+          <property name="tooltip"></property>
+        </object>
+        <object class="toolSeparator" expanded="false">
+          <property name="permission">protected</property>
+        </object>
+        <object class="tool" expanded="false">
+          <property name="bitmap">Load From Embedded File; icons_20/icons8-info-20.png</property>
+          <property name="context_menu">0</property>
+          <property name="id">wxID_ANY</property>
+          <property name="kind">wxITEM_NORMAL</property>
+          <property name="label">Info</property>
+          <property name="name">m_tool6</property>
+          <property name="permission">protected</property>
+          <property name="statusbar"></property>
+          <property name="tooltip"></property>
+        </object>
+        <object class="toolSeparator" expanded="false">
+          <property name="permission">protected</property>
         </object>
       </object>
       <object class="wxBoxSizer" expanded="false">
@@ -7260,7 +7266,7 @@
           </object>
         </object>
       </object>
-      <object class="wxStatusBar" expanded="true">
+      <object class="wxStatusBar" expanded="false">
         <property name="bg"></property>
         <property name="context_help"></property>
         <property name="context_menu">1</property>
@@ -7284,6 +7290,35 @@
         <property name="window_name"></property>
         <property name="window_style"></property>
       </object>
+    </object>
+    <object class="Dialog" expanded="true">
+      <property name="aui_managed">0</property>
+      <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
+      <property name="bg"></property>
+      <property name="center">wxBOTH</property>
+      <property name="context_help"></property>
+      <property name="context_menu">1</property>
+      <property name="drag_accept_files">0</property>
+      <property name="enabled">1</property>
+      <property name="event_handler">impl_virtual</property>
+      <property name="extra_style"></property>
+      <property name="fg"></property>
+      <property name="font"></property>
+      <property name="hidden">0</property>
+      <property name="id">wxID_ANY</property>
+      <property name="maximum_size"></property>
+      <property name="minimum_size"></property>
+      <property name="name">dialogProcessing</property>
+      <property name="pos"></property>
+      <property name="size">703,314</property>
+      <property name="style">wxDEFAULT_DIALOG_STYLE</property>
+      <property name="subclass">; ; forward_declare</property>
+      <property name="title"></property>
+      <property name="tooltip"></property>
+      <property name="two_step_creation">0</property>
+      <property name="window_extra_style"></property>
+      <property name="window_name"></property>
+      <property name="window_style"></property>
     </object>
   </object>
 </wxFormBuilder_Project>
